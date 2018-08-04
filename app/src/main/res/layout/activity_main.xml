@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apkglobal.qrcode.MainActivity">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Mobile No"
+       android:id="@+id/et"
+       />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Name"
+       android:id="@+id/et1"
+       app:layout_constraintTop_toBottomOf="@id/et"
+       />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Address"
+       android:id="@+id/et2"
+       app:layout_constraintTop_toBottomOf="@id/et1"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Generate QRcode"
+       android:id="@+id/btn"
+       app:layout_constraintTop_toBottomOf="@+id/et2"/>
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/iv"
+       app:layout_constraintTop_toBottomOf="@id/btn"/>
+
+</android.support.constraint.ConstraintLayout>
